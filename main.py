@@ -18,4 +18,8 @@ def predict(data:Input):
     print("processed")
     return {"input":data.text,"reverse":result}
 
+@app.get("/")
+def dis():
+    return {"message":"Hello World!"}
+
 
